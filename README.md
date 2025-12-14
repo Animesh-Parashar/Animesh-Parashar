@@ -1,4 +1,4 @@
-![Header](./assets/github-header-image.png)
+![Header](./assets/github-header-banner.png)
 
 <div align = "center">
 <p align = "center"> <img src = "https://github.com/Animesh-Parashar/Animesh-Parashar/blob/output/github-contribution-grid-snake-dark.svg?" alt = "Snake Game"/> </p>
