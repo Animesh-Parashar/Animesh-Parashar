@@ -26,8 +26,7 @@
 
 
 <div align= "center">
-  
-# 📊 GitHub Stats:
+
 <!-- <img height=200 align="left" src="https://github-readme-stats.vercel.app/api?username=Animesh-Parashar&theme=catppuccin_mocha" />
 <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=Animesh-Parashar&layout=compact&langs_count=8&card_width=320&theme=catppuccin_mocha" /> -->
 <!-- <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700">
