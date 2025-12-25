@@ -36,17 +36,3 @@
 </div>
 
 
-
-<div align= "center">
-<img height=200 align="left" src="https://github-readme-stats.vercel.app/api?username=Animesh-Parashar&theme=catppuccin_mocha" />
-<img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=Animesh-Parashar&layout=compact&langs_count=8&card_width=320&theme=catppuccin_mocha" />
-</div>
-
-
-
-
-
-<div align="center">
-
-<img src="https://github-contributor-stats.vercel.app/api?username=Animesh-Parashar&limit=5&theme=catppuccin_mocha&combine_all_yearly_contributions=true">
-</div>
