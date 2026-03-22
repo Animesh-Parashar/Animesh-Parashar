@@ -1,4 +1,3 @@
-![Header](./assets/github-header-banner.png)
 
 
 * 🛠️ **Protocol & Infra Engineer (in progress)** working on smart contracts, RPC middleware, and on-chain safety primitives.
