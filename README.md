@@ -30,13 +30,12 @@ implementation of Apache RocketMQ, a distributed messaging and streaming platfor
   owned clone, removing an allocation from a hot path.
 - [#5159](https://github.com/mxsm/rocketmq-rust/pull/5159): Same borrow-vs-clone
   fix applied to `trace_dispatcher`.
+  
 
-**Ethereum org repositories**: [forkcast
-#101](https://github.com/ethereum/forkcast/pull/101),
-[#103](https://github.com/ethereum/forkcast/pull/103) ·
-[kohaku #28](https://github.com/ethereum/kohaku/pull/28) ·
+**Ethereum org repositories**: [forkcast #103](https://github.com/ethereum/forkcast/pull/103) ·
 [protocol-studies #470](https://github.com/eth-protocol-fellows/protocol-studies/pull/470),
 [#468](https://github.com/eth-protocol-fellows/protocol-studies/pull/468)
+
 
 **40+ merged PRs** across upstream projects and collaborative codebases.
 
