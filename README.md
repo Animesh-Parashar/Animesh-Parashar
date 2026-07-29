@@ -95,7 +95,7 @@ Also: gravitational-wave echo detection from LIGO strain data. PyTorch, CUDA, GW
   </div>
 
 <div align="center">
-<a href="mailto:acryptovoyager@gmail.com"><img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="mailto:animeshparashar3439@gmail.com"><img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 <a href="https://www.linkedin.com/in/animesh-parashar-378659320/"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 </a>
 <a href="https://x.com/Animesh6488141"><img alt="X" src="https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=X&logoColor=white"/></a>
@@ -106,7 +106,7 @@ Also: gravitational-wave echo detection from LIGO strain data. PyTorch, CUDA, GW
 
  # 💻 Tech Stack: 
 <p>
-<img src="https://skillicons.dev/icons?i=rust,go,ts,solidity,py,cpp,bash,js,html,css,react,nextjs,nodejs,express,md,postgres,mysql,ipfs,mongodb,git,vscode,docker,postman,linux,ubuntu,htmx,github"/>
+<img src="https://skillicons.dev/icons?i=rust,ts,solidity,py,cpp,bash,js,html,css,react,nextjs,nodejs,express,md,postgres,mysql,ipfs,mongodb,git,vscode,docker,postman,linux,ubuntu,htmx,github"/>
 </p>
 <br />
 </div>
