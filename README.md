@@ -12,80 +12,114 @@ reproducible evidence.
 [Email](mailto:animeshparashar3439@gmail.com) ·
 [X](https://x.com/Animesh6488141)
 
-## What I'm working on
 
-- Building [Podman CI flake detection and analysis](https://github.com/Animesh-Parashar/podman-flake-analysis):
-  a standard-library Python pipeline that extracts TAP outcomes from real CI
-  artifacts, detects cross-run flips, groups failure signatures, and applies
-  contamination checks before ranking flaky tests.
-- Contributing to cloud-native projects. Most recently, I landed a
-  [Podman build-system fix](https://github.com/podman-container-tools/podman/pull/29357)
-  and opened a [Jaeger UI compatibility fix](https://github.com/jaegertracing/jaeger-ui/pull/4341)
-  for Node.js 25+.
-- Exploring policy engines and protocol-level guardrails for autonomous
-  software: deny-by-default evaluation, scoped permissions, rate limits, and
-  kill switches.
+- 📦 Upstream contributor to **Apache RocketMQ (Rust)**: 4 merged PRs in the
+  producer and tracing subsystems.
+- 🧩 Build **policy engines**: request interception, declarative rule
+  evaluation, deny-by-default enforcement, kill switches.
+- 🤖 Build **agentic AI systems**: retrieval pipelines over vector stores,
+  automated hyperparameter search, LLM-driven generate-and-evaluate loops.
+- 🔬 Co-author of a DOI-backed preprint on **self-supervised anomaly detection**
+  applied to ~178M real CMS jet constituents (LHC Open Data).
+- 🎯 Engineering philosophy: *behavior should be constrained at the protocol
+  level, not left to user trust or UI warnings.*
+- 🚀 Currently learning **Go** and **Kubernetes**, with the goal of contributing
+  to cloud native infrastructure projects.
 
-## Selected projects
+## Open Source Contributions
 
-| Project | What it does | Stack |
-| --- | --- | --- |
-| [podman-flake-analysis](https://github.com/Animesh-Parashar/podman-flake-analysis) | Detects, groups, and categorizes flaky Podman CI tests from real GitHub Actions data, with reproducible sampling and bias checks. | Python, GitHub Actions API |
-| [Aegis Protocol](https://github.com/Animesh-Parashar/Aegis-Protocol) | Intercepts agent-initiated transactions and enforces declarative spend caps, allowlists, rate limits, and emergency stops before signing. | TypeScript, Solidity, React, Valkey |
-| [EchoTip](https://github.com/Animesh-Parashar/echotip) | Resolves ENS profiles and lets users leave public on-chain tips and messages through a tested Sepolia contract. | Next.js, TypeScript, Solidity, Foundry |
-| [WolfAlpha](https://github.com/Animesh-Parashar/WolfAlpha) | Generates, backtests, and iteratively refines quantitative strategies using an LLM-driven evaluation loop. | Python, Gemini API, WorldQuant BRAIN |
-| [Wallet Risk Scoring](https://github.com/Animesh-Parashar/Wallet-Risk_Scoring) | Extracts behavioral features from Ethereum activity and serves real-time risk predictions through an API. | Python, Flask |
+**[mxsm/rocketmq-rust](https://github.com/mxsm/rocketmq-rust)**: Rust
+implementation of Apache RocketMQ, a distributed messaging and streaming platform.
 
-Also built protocol infrastructure for agent commerce and cross-chain
-settlement: [Econos](https://github.com/Animesh-Parashar/Econos),
-[x402-gateway](https://github.com/Animesh-Parashar/x402-gateway),
-[x402-nexus](https://github.com/Animesh-Parashar/x402-nexus), and
-[MergeFi](https://github.com/Animesh-Parashar/MergeFi) — 3rd place in the
-ETHGlobal ETHOnline 2025 Avail Nexus track.
+- [#5204](https://github.com/mxsm/rocketmq-rust/pull/5204): Surfaced explicit
+  errors on the `send_by_accumulator` path when the producer is uninitialized,
+  replacing a silent-failure path.
+- [#5185](https://github.com/mxsm/rocketmq-rust/pull/5185): Same class of fix
+  on `send_direct`; made uninitialized-producer state an explicit error rather
+  than undefined behavior.
+- [#5160](https://github.com/mxsm/rocketmq-rust/pull/5160): Changed the
+  `produce_accumulator` getter to return a borrowed reference instead of an
+  owned clone, removing an allocation from a hot path.
+- [#5159](https://github.com/mxsm/rocketmq-rust/pull/5159): Same borrow-vs-clone
+  fix applied to `trace_dispatcher`.
+  
 
-## Open source
+**Ethereum org repositories**: [forkcast #103](https://github.com/ethereum/forkcast/pull/103) ·
+[protocol-studies #470](https://github.com/eth-protocol-fellows/protocol-studies/pull/470),
+[#468](https://github.com/eth-protocol-fellows/protocol-studies/pull/468)
 
-- **[Podman](https://github.com/podman-container-tools/podman)** —
-  [#29357](https://github.com/podman-container-tools/podman/pull/29357), merged:
-  fixed the local unit-test target by building Ginkgo before invocation.
-- **[Apache RocketMQ Rust](https://github.com/mxsm/rocketmq-rust)** — four
-  merged PRs in producer and tracing code:
-  [#5204](https://github.com/mxsm/rocketmq-rust/pull/5204),
-  [#5185](https://github.com/mxsm/rocketmq-rust/pull/5185),
-  [#5160](https://github.com/mxsm/rocketmq-rust/pull/5160), and
-  [#5159](https://github.com/mxsm/rocketmq-rust/pull/5159).
-  Added explicit uninitialized-producer errors and removed unnecessary clones
-  by returning borrowed references.
-- **Ethereum ecosystem** —
-  [forkcast #103](https://github.com/ethereum/forkcast/pull/103), merged:
-  fixed anchor navigation for EIPs inside collapsed sections;
-  [protocol-studies #470](https://github.com/eth-protocol-fellows/protocol-studies/pull/470)
-  and [#468](https://github.com/eth-protocol-fellows/protocol-studies/pull/468),
-  merged: repaired broken JSON-RPC and consensus documentation links.
-- **[Basis-Zero](https://github.com/Ranish-Garg/Basis-Zero)** — 20 merged PRs
-  spanning Circle CCTP bridging, Yellow state-channel sessions, AMM flows, and
-  vault workflows.
 
-**40+ merged pull requests** across upstream projects and collaborative
-codebases.
+**40+ merged PRs** across upstream projects and collaborative codebases.
+
+
+## Selected Projects
+
+**[Aegis Protocol](https://github.com/Animesh-Parashar/Aegis-Protocol)**:
+*Admission control for autonomous AI agents.*
+A middleware enforcement layer that intercepts agent-initiated transactions
+before execution, evaluates each request against a declarative policy store
+(per-agent spend caps, allowlisted targets, rate limits), and denies by default.
+Agents submit structured intent requests and never hold signing keys, a signer
+proxy materializes the request only after every policy check passes. Includes an
+instant kill switch, a real-time observability dashboard, and a chaos simulator
+that adversarially fuzzes the policy engine with synthetic malicious behavior.
+Enforcement layer in Node.js/TypeScript; policy store implemented as on-chain
+contracts.
+
+**[AlphaRag / WolfAlpha](https://github.com/Animesh-Parashar/WolfAlpha)**:
+*Agentic retrieval pipeline for automated strategy generation.*
+Python service that proposes, backtests, and iteratively refines quantitative
+strategies. RAG over a Qdrant vector store, Optuna-driven hyperparameter search,
+Gemini API in the generate-and-evaluate loop, containerized with Docker.
+Evaluated against the WorldQuant BRAIN API.
+
+**[Wallet-Risk_Scoring](https://github.com/Animesh-Parashar/Wallet-Risk_Scoring)**:
+*Feature-extraction and inference API.*
+Flask service that ingests on-chain activity, derives behavioral features, and
+returns real-time risk predictions from a remote ML model.
+
+**Web3 protocol work**: [MergeFi](https://github.com/Animesh-Parashar/MergeFi)
+(ETHGlobal ETHOnline 2025, 3rd place, Avail Nexus track),
+[Basis-Zero](https://github.com/Ranish-Garg/Basis-Zero) (20 merged PRs:
+cross-chain bridging, state-channel sessions, AMM and vault workflows),
+[x402-nexus](https://github.com/Animesh-Parashar/x402-nexus) (agent payment
+protocol).
+
+---
 
 ## Research
 
-### [Self-Supervised Anomaly Detection on Real LHC Data](https://github.com/Animesh-Parashar/aspen-jet-anomaly)
+**Self-Supervised Anomaly Detection on Real LHC Data**: Preprint, Jun 2026 ·
+[DOI: 10.5281/zenodo.20827792](https://doi.org/10.5281/zenodo.20827792)
+Contrastive self-supervised learning (transformer encoder, NT-Xent objective,
+physics-informed augmentations) applied to ~178M real CMS jet constituents
+(AspenOpenJets, LHC Open Data, √s = 13 TeV) for model-agnostic anomaly detection.
 
-Co-authored a [DOI-backed preprint](https://doi.org/10.5281/zenodo.20827792)
-applying contrastive self-supervised learning to approximately 178 million real
-CMS jet constituents from LHC Open Data. The system uses a transformer encoder,
-an NT-Xent objective, and physics-informed augmentations for model-agnostic
-anomaly detection.
+Also: gravitational-wave echo detection from LIGO strain data. PyTorch, CUDA, GWpy, PyCBC.
 
-## Toolbox
+---
 
-- **Languages:** Python, Rust, TypeScript, JavaScript, Solidity, Go, C++
-- **Systems & data:** Docker, Linux, GitHub Actions, PostgreSQL, MongoDB,
-  Qdrant, Valkey
-- **Application:** Node.js, React, Next.js, Flask, Foundry
+<div align = "center">
+<!-- <img src="https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif" width="500"> -->
 
-<p align="center">
-  <img src="https://github.com/Animesh-Parashar/Animesh-Parashar/blob/output/github-contribution-grid-snake-dark.svg" alt="GitHub contribution graph" />
+ <div align="center">
+  <h2><b>Can Connect With Me On</b></h2>
+  </div>
+
+<div align="center">
+<a href="mailto:animeshparashar3439@gmail.com"><img alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="https://www.linkedin.com/in/animesh-parashar-378659320/"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+</a>
+<a href="https://x.com/Animesh6488141"><img alt="X" src="https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=X&logoColor=white"/></a>
+
+</div>
+<br>
+<p align = "center"> <img src = "https://github.com/Animesh-Parashar/Animesh-Parashar/blob/output/github-contribution-grid-snake-dark.svg?" alt = "Snake Game"/> </p>
+
+ # 💻 Tech Stack: 
+<p>
+<img src="https://skillicons.dev/icons?i=rust,ts,solidity,py,cpp,bash,js,html,css,react,nextjs,nodejs,express,md,postgres,mysql,ipfs,mongodb,git,vscode,docker,postman,linux,ubuntu,htmx,github"/>
 </p>
+<br />
+</div>
+
