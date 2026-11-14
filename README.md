@@ -3,12 +3,11 @@
 **Systems & infrastructure engineer** working on reliability tooling,
 distributed systems, policy enforcement, and agentic AI.
 
-Engineering Physics at **IIT (ISM) Dhanbad**. I like systems that make failure
+I like systems that make failure
 observable, enforce safety at the protocol boundary, and are backed by
 reproducible evidence.
 
 [Portfolio](https://software-portfolio-gamma.vercel.app/) ·
-[LinkedIn](https://www.linkedin.com/in/animesh-parashar-378659320/) ·
 [Email](mailto:animeshparashar3439@gmail.com) ·
 [X](https://x.com/Animesh6488141)
 
